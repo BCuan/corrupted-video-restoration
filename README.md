@@ -24,6 +24,12 @@ The corrupted video contains irrelevant noises that differs visually from origin
 preserved, though in a random order. Visual similarity/distance between frames can be exploited for frame
 association. The algorithm is realized with Python and common libraries like OpenCV, numpy and ffmpeg.
 
+
+[![Corrupted Video](assets/corrupted.png)](corrupted_video.mp4)
+<div align="center">
+Corrupted Video
+</div>
+
 ### 2. Denoising
 
 Noises are completely irrelevant to the original video. Therefore, a simple filter on image-wise mean RGB (BGR with
@@ -65,6 +71,12 @@ A workaround is to provide minimum human knowledge as reference. For example, an
 is chronologically in front of another (as used in this demo).
 
 ### 5. Misc
+
+[![Corrupted Video](assets/restored.png)](results/restored/corrupted_video.mp4)
+<div align="center">
+Restored Video
+</div>
+
 
 The restored video is generated from the rearranged image sequence with the same codec and fps of the original corrupted
 video. The AVC1 encoder, provided by ffmpeg, is not available by default in precompiled opencv-python library, due to
